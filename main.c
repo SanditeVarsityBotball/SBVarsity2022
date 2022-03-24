@@ -2,31 +2,15 @@
 
 int main()
 {
-   motor (0,-100);
-    motor (3,-100);
-    msleep (600);
-    motor (0,-100);
-    motor (3,-30);
-    msleep (1800);
-    motor (0,-100);
-    motor (3,-100);
-    msleep (4000);
-    motor (0,-100);
-    motor ( 3,-30);
-    msleep (3000);
-    motor (0,-100);
-    motor (3,-100);
-    msleep (3000);
-    motor (0,100);
-    motor (3,30);
-    msleep (5000);
-    motor (0,100);
-    motor (3,100);
-    msleep (2000);
-    motor (0,90);
-    motor (3,100);
-    msleep (100);
-    set_servo_position (0,1100);
-    msleep (1000);
+    printf("Hello World\n");
+    //wait_for_light()
+    create_connect();
+    create_drive_straight(300);
+    msleep(3450);
+    enable_servos(1);
+    set_servo_position(1,0);
+    msleep(1000);
+    create_drive_direct(-300,-300);
+    msleep(2500);
     return 0;
 }
